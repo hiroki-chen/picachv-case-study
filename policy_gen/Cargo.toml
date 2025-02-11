@@ -1,0 +1,14 @@
+[package]
+name = "policy_gen"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.16", features = ["derive"] }
+parquet = "52.0.0"
+picachv-core = { path = "../../picachv/picachv-core", features = [
+  "fast_bin",
+  "json",
+  "use_parquet",
+] }
+polars = { workspace = true }
