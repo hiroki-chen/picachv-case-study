@@ -4,7 +4,7 @@ resolver = "2"
 members = ["chronic", "healthcare", "policy_gen"]
 
 [workspace.dependencies]
-polars = { path = "../polars/crates/polars", default-features = false, features = [
+polars = { git = "https://github.com/hiroki-chen/polars", default-features = false, features = [
   "performant",
   "fmt",
   "simd",
